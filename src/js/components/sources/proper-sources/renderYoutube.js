@@ -16,9 +16,4 @@ export function renderYoutube(fsLightbox, i) {
     setUpSourceCustomAttributes(fsLightbox, i);
     sourceAnimationWrappers[i].appendChild(sourcesElements[i]);
     sourceLoadHandlers[i].handleYoutubeLoad();
-
-    function getYoutubeVideoIdFromUrl(url) {
-        const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-        return url.match(regExp)[2];
-    }
 }
